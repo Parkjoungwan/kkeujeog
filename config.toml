@@ -6,7 +6,7 @@ theme = "hugo-theme-codex"
 # Override these settings with your own
 title = "kkeujeog"
 languageCode = "en-us"
-baseURL = "https://parkjoungwan.github.io/"
+baseURL = "https://parkjoungwan.github.io"
 copyright = "© {year}"
 
 # Add your Disqus shortname here.
