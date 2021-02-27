@@ -47,9 +47,9 @@ hugo -t [theme name]
 Docs에서는 그냥 'hugo -D'를 사용해서 빌드를 끝냈다.  
 혹시나 하는 마음에 그대로 따라했고 포스트가 보이지 않던 오류는 사라졌다.  
   
-[hugo flags](https://gohugo.io/commands/hugo/)
+[Hugo Flags](https://gohugo.io/commands/hugo/)
   
 왜 그랬는지는 이제 Docs를 읽을 이유를 잃어버린 나로서는 알 수 없게 되어버렸다.  
 다음 오류 때 알아보도록 하자.  
-결론적으로, 오늘의 팁은 Docs를 열심히 읽자 이다.
+결론적으로, 오늘의 팁은 'Docs를 열심히 읽자' 이다.
 
