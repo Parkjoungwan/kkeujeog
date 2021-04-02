@@ -63,7 +63,7 @@ GCPC
 
 Trie라는 자료구조는 문자열 분류에 필요한 자료구조이며, 다음과 같은 구조를 갖는다.
 
-[https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F996F503359E610D11E626E](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F996F503359E610D11E626E)
+![https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F996F503359E610D11E626E](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=http%3A%2F%2Fcfile10.uf.tistory.com%2Fimage%2F996F503359E610D11E626E)
 
 이 문제에서 Boggle이라는 게임은 주어진 사전과 알파벳이 적혀있는 4x4판에서 한 칸당 하나의 문장에 사용해서 많은 단어를 찾고 점수를 얻는게 목표인 게임이다.
 
