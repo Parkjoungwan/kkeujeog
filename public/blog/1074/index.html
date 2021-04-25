@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>[Algorithm, C&#43;&#43;] 백준 1074: Z | kkeujeogblog</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+
+  <link rel="shortcut icon" type="image/png" href="/favicon.ico" />
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.a4712d0376acf8c0491ef2b98baf2f9287629f027a654e15b0ca42433957f47d.css" integrity="sha256-pHEtA3as&#43;MBJHvK5i68vkodinwJ6ZU4VsMpCQzlX9H0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/parkjoungwan.github.io"
+      },
+      "articleSection" : "blog",
+      "name" : "[Algorithm, C\u002b\u002b] 백준 1074: Z",
+      "headline" : "[Algorithm, C\u002b\u002b] 백준 1074: Z",
+      "description" : "",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2021",
+      "datePublished": "2021-04-13 20:24:56 \u002b0900 KST",
+      "dateModified" : "2021-04-13 20:24:56 \u002b0900 KST",
+      "url" : "https:\/\/parkjoungwan.github.io\/blog\/1074\/",
+      "wordCount" : "209",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-190569206-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">[Algorithm, C&#43;&#43;] 백준 1074: Z</h1>
+            <time datetime="2021-04-13 20:24:56 &#43;0900 KST" class="post__date">2021-04-13</time> 
+          </header>
+          <article class="post__content">
+              
+<h1 id="문제">문제</h1>
+<p>한수는 크기가 2N × 2N인 2차원 배열을 Z모양으로 탐색하려고 한다. 예를 들어, 2×2배열을 왼쪽 위칸, 오른쪽 위칸, 왼쪽 아래칸, 오른쪽 아래칸 순서대로 방문하면 Z모양이다.</p>
+<p><img src="https://upload.acmicpc.net/21c73b56-5a91-43aa-b71f-9b74925c0adc/-/preview/" alt="https://upload.acmicpc.net/21c73b56-5a91-43aa-b71f-9b74925c0adc/-/preview/"></p>
+<p>만약, N &gt; 1이 라서 왼쪽 위에 있는 칸이 하나가 아니라면, 배열을 크기가 2N-1 × 2N-1로 4등분 한 후에 재귀적으로 순서대로 방문한다.</p>
+<p>다음 예는 22 × 22 크기의 배열을 방문한 순서이다.</p>
+<p><img src="https://upload.acmicpc.net/adc7cfae-e84d-4d5c-af8e-ee011f8fff8f/-/preview/" alt="https://upload.acmicpc.net/adc7cfae-e84d-4d5c-af8e-ee011f8fff8f/-/preview/"></p>
+<p>N이 주어졌을 때, r행 c열을 몇 번째로 방문하는지 출력하는 프로그램을 작성하시오.</p>
+<p>다음은 N=3일 때의 예이다.</p>
+<p><img src="https://upload.acmicpc.net/d3e84bb7-9424-4764-ad3a-811e7fcbd53f/-/preview/" alt="https://upload.acmicpc.net/d3e84bb7-9424-4764-ad3a-811e7fcbd53f/-/preview/"></p>
+<h1 id="예제">예제</h1>
+<pre><code class="language-cpp">2 3 1
+</code></pre>
+<h1 id="출력">출력</h1>
+<pre><code class="language-cpp">11
+</code></pre>
+<h1 id="풀이">풀이</h1>
+<p>이번주는 분할정복 문제다.</p>
+<p>&ldquo;2의 N 제곱씩 나눠서 사분면으로 나눠생각해서 몇 사분면에 속하는지 재귀적으로 접근해서 갯수를 헤아려주면 된다.&rdquo;</p>
+<h1 id="코드">코드</h1>
+<pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;algorithm&gt;
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;math.h&gt;
+
+using namespace std;
+
+int N, r, c;
+int result = 0;
+int bear[2][2] = {{0, 1}, {2, 3}};
+
+void	fd_check()
+{
+	int num = pow(2, N);
+	int beary = (num / 2) - 1 &lt; r ? 1 : 0;
+	int bearx = (num / 2) - 1 &lt; c ? 1 : 0;
+	N--;
+	result += bear[beary][bearx] * pow(2, N) * pow(2, N);
+	if (beary)
+		r -= pow(2, N);
+	if (bearx)
+		c -= pow(2, N);
+	if (N == 0)
+		return;
+	fd_check();
+}
+
+int		main()
+{
+	ios::sync_with_stdio(false);
+	cin.tie(NULL);
+	cout.tie(NULL);
+	cin &gt;&gt; N &gt;&gt; r &gt;&gt; c;
+	fd_check();
+	cout &lt;&lt; result;
+	return 0;
+}
+</code></pre>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://parkjoungwan.github.io/tags/algorithm/">Algorithm</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://parkjoungwan.github.io/tags/c&#43;&#43;/">C&#43;&#43;</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://parkjoungwan.github.io/blog/nojam1981/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">[Algorithm, C&#43;&#43;] 백준 1981: 배열의 이동</span>
+    </a>
+  
+
+  
+    <a class="pagination__item" href="https://parkjoungwan.github.io/blog/4256/">
+      <span class="pagination__label">Next Post</span>
+      <span class="pagination__title" >[Algorithm, C&#43;&#43;] 백준 4256: 트리</span>
+    </a>
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="Email"
+         href="mailto:whddhs6645@gmail.com"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://parkjoungwan.github.io/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a class="social-icons__link" rel="me" title="GitHub"
+         href="https://github.com/parkjoungwan"
+         target="_blank" rel="noopener">
+        <div class="social-icons__icon" style="background-image: url('https://parkjoungwan.github.io/svg/github.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© 2021</p>
+          </footer>
+          </div>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+
+
+</body>
+
+</html>
