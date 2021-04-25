@@ -1,4 +1,4 @@
-[submodule "public/public"]
-	path = public/public
+[submodule "public"]
+	path = public
 	url = https://github.com/Parkjoungwan/Parkjoungwan.github.io.git
 	branch = master
