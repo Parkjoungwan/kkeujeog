@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C&#43; on kkeujeogblog</title>
+    <link>https://parkjoungwan.github.io/tags/c&#43;/</link>
+    <description>Recent content in C&#43; on kkeujeogblog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>© {year}</copyright>
+    <lastBuildDate>Sun, 25 Apr 2021 15:25:39 +0900</lastBuildDate><atom:link href="https://parkjoungwan.github.io/tags/c+/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Algorithm, C&#43;&#43;] 백준 1062: 가르침</title>
+      <link>https://parkjoungwan.github.io/blog/1062/</link>
+      <pubDate>Sun, 25 Apr 2021 15:25:39 +0900</pubDate>
+      
+      <guid>https://parkjoungwan.github.io/blog/1062/</guid>
+      <description>문제 남극에 사는 김지민 선생님은 학생들이 되도록이면 많은 단어를 읽을 수 있도록 하려고 한다. 그러나 지구온난화로 인해 얼음이 녹아서 곧 학교가 무너지기 때문에, 김지민은 K개의 글자를 가르칠 시간 밖에 없다. 김지민이 가르치고 난 후에는, 학생들은 그 K개의 글자로만 이루어진 단어만을 읽을 수 있다. 김지민은 어떤 K개의 글자를 가르쳐야 학생들이 읽을 수 있는 단어의 개수가 최대가 되는지 고민에 빠졌다.
+남극언어의 모든 단어는 &amp;ldquo;anta&amp;quot;로 시작되고, &amp;ldquo;tica&amp;quot;로 끝난다. 남극언어에 단어는 N개 밖에 없다고 가정한다.</description>
+    </item>
+    
+  </channel>
+</rss>
